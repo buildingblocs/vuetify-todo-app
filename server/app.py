@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-from flask import session
 import datetime as dt
 import sqlite3
 
@@ -11,8 +10,6 @@ def new_todo():
     title = request.get_json()["title"]
     msg = ""
     print("title", title)
-
-    all_records = []
     
     with sqlite3.connect("database.db") as con:
         try:

@@ -8,7 +8,7 @@
             <v-text-field v-model="name" label="Username" style="width: auto" v-on:keyup.enter="search" />
           </v-col>
           <v-col cols='auto' align-self="center">
-            <v-btn v-on:click=search style="display: block; margin: auto">SEARCH</v-btn>
+            <v-btn v-on:click="search" style="display: block; margin: auto">SEARCH</v-btn>
           </v-col>
         </v-row>
 

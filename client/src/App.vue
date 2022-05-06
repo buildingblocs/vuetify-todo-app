@@ -112,6 +112,11 @@ export default Vue.extend({
           name: "News",
           route: "/news",
           icon: "mdi-newspaper",
+        },
+        {
+          name: "Demo",
+          route: "/help",
+          icon: "mdi-newspaper",
         }
       ];
     },

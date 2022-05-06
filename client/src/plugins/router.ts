@@ -7,6 +7,7 @@ import {default as Jokes} from "@/views/Jokes.vue";
 import {default as Quotes} from "@/views/Quotes.vue";
 import {default as HackerNews} from "@/views/HackerNews.vue";
 import {default as Todo} from "@/views/Todo.vue";
+import {default as Demo} from "@/views/Demo.vue";
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,10 @@ const routes: Array<RouteConfig> = [
   {
     path: "/news",
     component: HackerNews
+  },
+  {
+    path: "/help",
+    component: Demo
   }
 ];
 
