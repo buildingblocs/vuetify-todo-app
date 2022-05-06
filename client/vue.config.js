@@ -1,7 +1,7 @@
 module.exports = {
   lintOnSave: false,
   transpileDependencies: [
-    "vuetify",
+    "vuetify","vuetify-datetime-picker"
   ],
   chainWebpack: (config) => {
     config.module

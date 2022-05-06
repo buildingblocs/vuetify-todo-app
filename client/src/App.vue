@@ -46,8 +46,10 @@
       <v-app-bar-nav-icon v-if="user != null"
                           @click="drawerShown = !drawerShown"/>
       <v-toolbar-title>
-        YourName's Vue App
+        Your First Vue App
       </v-toolbar-title>
+      <v-switch v-model="$vuetify.theme.dark" color="orange" label="Dark Mode"
+                style="margin: 15px 15px 0 20px; display: block"/>
     </v-app-bar>
 
     <v-content>
@@ -65,7 +67,7 @@ export default Vue.extend({
   data: () => ({
     drawerShown: false,
     user: {
-      name: "YourName",
+      name: "Prannaya",
     }
   }),
   computed: {
@@ -77,10 +79,35 @@ export default Vue.extend({
       // Add routes here to correspond to router.ts
       return [
         {
-          name: "Main page",
+          name: "Home",
           route: "/",
-          icon: "mdi-file-table-box",
+          icon: "mdi-home-variant",
         },
+        {
+          name: "GitHub",
+          route: "/github",
+          icon: "mdi-github",
+        },
+        {
+          name: "ISS",
+          route: "/iss",
+          icon: "mdi-space-station",
+        },
+        {
+          name: "Jokes!",
+          route: "/jokes",
+          icon: "mdi-code-not-equal-variant",
+        },
+        {
+          name: "Quotes",
+          route: "/quotes",
+          icon: "mdi-format-quote-open",
+        },
+        {
+          name: "News",
+          route: "/news",
+          icon: "mdi-newspaper",
+        }
       ];
     },
   }
