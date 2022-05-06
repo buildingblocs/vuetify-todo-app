@@ -84,6 +84,11 @@ export default Vue.extend({
           icon: "mdi-home-variant",
         },
         {
+          name: "Todo",
+          route: "/todo",
+          icon: "mdi-home-variant",
+        },
+        {
           name: "GitHub",
           route: "/github",
           icon: "mdi-github",
